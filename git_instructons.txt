@@ -1,0 +1,58 @@
+git init //initial repository
+git add x //staging x
+git status //status
+git commit //commit the staged
+-m: message; -a: all files staged
+git log //logs
+git remote add remote_name remote_url //add new remote
+git remote -v //list of repos branch we track
+git push remote_name branch //push the staged; ex: push origin master
+git rm x //removes x
+
+git switch -c x //switch branch
+git branch //list branches
+git checkout -b x //create branch+go in
+git restore x //unstage changes; restore
+
+git reset --soft HEAD~1 //undo commit
+git reset --hard HEAD~1 //delete commit
+
+git rebase -i HEAD~x //put x commits in one
+-s: for 2-x
+
+git fetch x //fetch changes from x; branch heads
+git fetch --multiple x y //fetch changes from x,y
+
+git merge x/y //merge from xs y branch
+
+git pull x/y //fetch+merge
+git pull --rebase //pull+rebase
+
+git fetch x
+git rebase x/branch_name //stacks commit over commits
+git rebase -i HEAD~1 //stacks of last commit +add message 
+
+git branch -d x //delete branch
+git push x :remote_branch //remote branch on x
+
+git stash //safe store
+git stash pop //pop last out of stashed stack; also droped immediately
+git stash apply //can apply changes later
+--index: preserve staged setup
+git stash show -p //simplified version of stash
+git stash drop //get rid of stash
+git stash list //list of stashes
+it stash apply stash@{x} //apply for xth stash
+
+git push --tags //push with tag
+git tag -a "xx" x //create commit with tag name xx
+git tag -l //list tags
+git fetch --tags //all tags corresponding
+
+git clone x //clone to local
+
+git submodule x //project within project
+git submodule add x  
+git submodule init x y//creates .gitmodules for x y
+git submodule update //updates from ones inits
+
