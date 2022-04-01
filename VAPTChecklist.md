@@ -11,7 +11,7 @@
 - [ ] Information Leakage (Versions, Servers)
 - [ ] Cookies Flags
 - [ ] Outdated JQuery, Bootstrap
-- [ ] HTML Injection (<a href=//www.attack.com>)
+- [ ] HTML Injection (<a href=//link>)
 - [ ] XSLeaks - Allow-creds, Allow-origin, 
 - [ ] Information Leakage via robots.txt
 - [ ] Concurrent Sessions Allowed (Login from different browsers)
